@@ -1,0 +1,9 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+# Install a PyTorch build appropriate for your platform/GPU, then:
+torch>=2.2
+transformers>=4.40,<5
+safetensors>=0.4
+python-dotenv>=1,<2
+pytest>=8,<9
+httpx>=0.27,<1

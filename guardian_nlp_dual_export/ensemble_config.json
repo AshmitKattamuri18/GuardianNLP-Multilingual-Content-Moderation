@@ -1,0 +1,46 @@
+{
+  "parameter_counts": {
+    "lite_total": 20062467,
+    "lite_trainable": 20062467,
+    "muril_total": 237558531,
+    "muril_trainable": 237558531,
+    "muril_embeddings": 151911168,
+    "muril_encoder_blocks": 85054464,
+    "muril_classification_head": 2307
+  },
+  "model_version": "indicguard-review2-upgrade-v1",
+  "class_order": [
+    "NORMAL",
+    "OFFENSIVE",
+    "HATE_SPEECH"
+  ],
+  "ensemble_weights": {
+    "muril": 0.65,
+    "lite": 0.35
+  },
+  "max_length": 128,
+  "best_validation_macro_f1": {
+    "lite": 0.6841743778893097,
+    "muril": 0.7080240695766977
+  },
+  "epochs_completed": {
+    "lite": 8.0,
+    "muril": 7.0
+  },
+  "architecture": {
+    "lite": {
+      "layers": 6,
+      "heads": 8,
+      "hidden_size": 384,
+      "intermediate_size": 1536,
+      "vocab_target": 24000,
+      "vocab_actual": 24000
+    },
+    "muril": {
+      "pretrained": "google/muril-base-cased",
+      "pooling": "attention-mask-aware mean",
+      "dropout": 0.3,
+      "classes": 3
+    }
+  }
+}

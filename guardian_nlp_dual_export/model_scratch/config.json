@@ -1,0 +1,36 @@
+{
+  "architectures": [
+    "BertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.25,
+  "bos_token_id": 0,
+  "classifier_dropout": 0.25,
+  "dtype": "float32",
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.25,
+  "hidden_size": 384,
+  "id2label": {
+    "0": "NORMAL",
+    "1": "OFFENSIVE",
+    "2": "HATE_SPEECH"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 1536,
+  "label2id": {
+    "HATE_SPEECH": 2,
+    "NORMAL": 0,
+    "OFFENSIVE": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 128,
+  "model_type": "bert",
+  "num_attention_heads": 8,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.57.1",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 24000
+}

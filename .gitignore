@@ -1,0 +1,32 @@
+﻿# Python virtual environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node.js dependencies
+node_modules/
+dist/
+.vite/
+
+# Trained model weights
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.ckpt
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
